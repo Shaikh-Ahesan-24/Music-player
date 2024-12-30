@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/black"
+    tools:context=".MainActivity">
+
+    <androidx.cardview.widget.CardView
+        android:id="@+id/card"
+        android:layout_width="match_parent"
+        android:layout_height="500dp"
+        app:cardElevation="30dp"
+        app:cardCornerRadius="20dp"
+        app:cardUseCompatPadding="true">
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/listen"
+            android:scaleType="fitCenter"
+            android:contentDescription="@string/image"/>
+    </androidx.cardview.widget.CardView>
+      <ImageButton
+          android:id="@+id/play"
+          android:layout_width="50dp"
+          android:layout_height="50dp"
+          android:contentDescription="@string/play"
+          android:layout_below="@id/card"
+          android:layout_centerInParent="true"
+          android:src="@drawable/baseline_play_arrow_24"
+          android:background="@drawable/circle"
+          android:layout_margin="40dp"/>
+          <ImageButton
+              android:id="@+id/pause"
+              android:layout_width="50dp"
+              android:layout_height="50dp"
+              android:contentDescription="@string/pause"
+              android:src="@drawable/baseline_pause_24"
+              android:layout_below="@id/card"
+              android:layout_marginStart="70dp"
+              android:background="@drawable/circle"
+              android:layout_marginTop="40dp"/>
+    <ImageButton
+        android:id="@+id/s"
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        android:contentDescription="@string/stop"
+        android:src="@drawable/baseline_stop_24"
+        android:background="@drawable/circle"
+        android:layout_below="@id/card"
+        android:layout_alignParentEnd="true"
+        android:layout_marginTop="40dp"
+        android:layout_marginEnd="70dp"/>
+
+</RelativeLayout>
